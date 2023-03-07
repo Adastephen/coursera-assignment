@@ -1,0 +1,7 @@
+navbar_header {
+	background-color: red;
+}
+#Chicken, #Beef, #Sushi {
+	background-color: gray;
+	margin-bottom: 25px;
+}
