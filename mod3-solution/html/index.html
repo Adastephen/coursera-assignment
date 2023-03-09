@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>mod3-solution</title>
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/home.css">
 </head>
 <body>
@@ -12,26 +12,29 @@
 		<nav class="navbar navbar-default">
 		  <div id="navbar_header" class="container-fluid">
 		    <!--Brand and toggle get grouped for better mobile display--> 
-		    <a class="navbar-brand" href="#">FOOD, LLC</a>
-		    <div class="visible-xs">
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+		        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
+		      <a class="navbar-brand" href="#">FOOD, LLC</a>
 		    </div>
-
 		     <!--Collect the nav links, forms, and other content for toggling-->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav text-center">
-		        <li><a href="#">Chicken</a></li>
-		        <li><a href="#">Beef</a></li>
-		        <li><a href="#">Sushi</a></li>
+		      <ul class="nav navbar-nav visible-xs">
+		      	<li id="chicken_target">
+		      		<a href="#">Chicken</a>
+		      	</li>
+		        <li id="beef_target">
+		        	<a href="#">Beef</a>
+		        </li>
+		        <li>
+		        	<a href="#">Sushi</a>
+		        </li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
-		    </div>
 		  </div><!-- /.container-fluid -->
 		</nav>
 	</header>
@@ -42,7 +45,7 @@
 
 			<div id="row" class="row">
 				<div id="Chicken" class="col-sm-12">
-					<div class="text-center"><h3>Chicken</h3></div>
+					<div class="text-center" data-target="#chicken_target"><h3>Chicken</h3></div>
 						<div> <p>lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designersto consider the form of a webpage or publication, without the meaning of the text influencing the design.
 
 						Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.
@@ -63,7 +66,7 @@
 				</div>
 
 				<div id="Beef" class="col-sm-12">
-					<div class="text-center"><h3>Beef</h3></div>
+					<div class="text-center"><h3 data-target="#beef_target">Beef</h3></div>
 						<div> <p>lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
 
 						Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.
